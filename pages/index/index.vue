@@ -14,11 +14,11 @@
       </view>
       <view class="topbar-btns">
         <view class="topbar-btn" @tap="openMask('play')">
-          <image class="ico-img" src="/static/image/icon/提示.png" mode="aspectFit" />
+          <image class="ico-img" src="/static/image/icon/tips.png" mode="aspectFit" />
           <text>玩法</text>
         </view>
         <view class="topbar-btn" @tap="openHis">
-          <image class="ico-img" src="/static/image/icon/记录.png" mode="aspectFit" />
+          <image class="ico-img" src="/static/image/icon/record.png" mode="aspectFit" />
           <text>我的签缘</text>
         </view>
       </view>
@@ -352,12 +352,12 @@
               <template v-for="(cell, i) in currentMh ? currentMh.pan : []" :key="i">
                 <text class="ly-cell ly-cell-s">{{ cell.pos }}</text>
                 <view class="ly-cell ly-cell-d">
-                  <image v-if="cell.ben" class="yao-img yao-yang" src="/static/image/icon/长.png" />
-                  <image v-else class="yao-img yao-yin" src="/static/image/icon/短.png" />
+                  <image v-if="cell.ben" class="yao-img yao-yang" src="/static/image/icon/yang.png" />
+                  <image v-else class="yao-img yao-yin" src="/static/image/icon/yin.png" />
                 </view>
                 <view class="ly-cell ly-cell-q">
-                  <image v-if="cell.bian" class="yao-img yao-yang" src="/static/image/icon/长.png" />
-                  <image v-else class="yao-img yao-yin" src="/static/image/icon/短.png" />
+                  <image v-if="cell.bian" class="yao-img yao-yang" src="/static/image/icon/yang.png" />
+                  <image v-else class="yao-img yao-yin" src="/static/image/icon/yin.png" />
                 </view>
                 <text class="ly-cell ly-cell-m">{{ cell.mark }}</text>
               </template>
@@ -416,7 +416,7 @@
           </view>
         </view>
         <view v-if="collected.length === 0" class="his-empty">
-          <image class="he-seal" src="/static/image/icon/记录.png" mode="aspectFit" />
+          <image class="he-seal" src="/static/image/icon/record.png" mode="aspectFit" />
           <view class="he-t">尚未收藏签文</view>
           <view class="he-s">摇签后点「收藏此签」，把心意留在这里。</view>
         </view>
@@ -454,14 +454,14 @@ interface Card {
   page: number
 }
 const cards: Card[] = [
-  { name: '今日运势', sub: '一日好景', hint: '愿今天有一些小小的好运。', icon: '/static/image/icon/今.png', page: 0 },
-  { name: '人际情感', sub: '心意相知', hint: '愿真诚的心意被温柔接住。', icon: '/static/image/icon/情.png', page: 0 },
-  { name: '事业学业', sub: '前路可期', hint: '关于目标，听听内心的声音。', icon: '/static/image/icon/业.png', page: 0 },
-  { name: '生活灵感', sub: '寻常有光', hint: '从平凡日子里，拾起一点灵感。', icon: '/static/image/icon/活.png', page: 0 },
-  { name: '财运亨通', sub: '天助运宝', hint: '抓住机遇，闪耀金光。', icon: '/static/image/icon/财.png', page: 1 },
-  { name: '灵犀一念', sub: '心有所感', hint: '抓住稍瞬即逝的花火。', icon: '/static/image/icon/念.png', page: 1 },
-  { name: '信手拈来', sub: '心手相应', hint: '轻轻一挥手，顺风向前走。', icon: '/static/image/icon/信.png', page: 1 },
-  { name: '花语知梦', sub: '顺意解语', hint: '坐望云舒，去来皆有风景。', icon: '/static/image/icon/花.png', page: 1 },
+  { name: '今日运势', sub: '一日好景', hint: '愿今天有一些小小的好运。', icon: '/static/image/icon/jin.png', page: 0 },
+  { name: '人际情感', sub: '心意相知', hint: '愿真诚的心意被温柔接住。', icon: '/static/image/icon/qing.png', page: 0 },
+  { name: '事业学业', sub: '前路可期', hint: '关于目标，听听内心的声音。', icon: '/static/image/icon/ye.png', page: 0 },
+  { name: '生活灵感', sub: '寻常有光', hint: '从平凡日子里，拾起一点灵感。', icon: '/static/image/icon/huo.png', page: 0 },
+  { name: '财运亨通', sub: '天助运宝', hint: '抓住机遇，闪耀金光。', icon: '/static/image/icon/cai.png', page: 1 },
+  { name: '灵犀一念', sub: '心有所感', hint: '抓住稍瞬即逝的花火。', icon: '/static/image/icon/nian.png', page: 1 },
+  { name: '信手拈来', sub: '心手相应', hint: '轻轻一挥手，顺风向前走。', icon: '/static/image/icon/xin.png', page: 1 },
+  { name: '花语知梦', sub: '顺意解语', hint: '坐望云舒，去来皆有风景。', icon: '/static/image/icon/hua.png', page: 1 },
 ]
 
 const page = ref(0)
@@ -634,19 +634,19 @@ function againSign() {
 const STORAGE_KEY = 'yiqian_my_signs_v1'
 
 const CAT_ICONS: Record<string, string> = {
-  今日运势: '/static/image/icon/今.png',
-  人际情感: '/static/image/icon/情.png',
-  事业学业: '/static/image/icon/业.png',
-  生活灵感: '/static/image/icon/活.png',
-  财运亨通: '/static/image/icon/财.png',
-  灵犀一念: '/static/image/icon/念.png',
-  信手拈来: '/static/image/icon/信.png',
-  花语知梦: '/static/image/icon/花.png',
+  今日运势: '/static/image/icon/jin.png',
+  人际情感: '/static/image/icon/qing.png',
+  事业学业: '/static/image/icon/ye.png',
+  生活灵感: '/static/image/icon/huo.png',
+  财运亨通: '/static/image/icon/cai.png',
+  灵犀一念: '/static/image/icon/nian.png',
+  信手拈来: '/static/image/icon/xin.png',
+  花语知梦: '/static/image/icon/hua.png',
 }
 
 /** cat → 图标路径（无 icon 字段时兜底映射） */
 function catIcon(cat: string): string {
-  return CAT_ICONS[cat] || '/static/image/icon/记录.png'
+  return CAT_ICONS[cat] || '/static/image/icon/record.png'
 }
 
 interface CollectedSign extends SignView {
