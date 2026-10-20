@@ -1,0 +1,46 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "一签·心愿",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shake/shake",
+			"style": {
+				"navigationBarTitleText": "摇签",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/result/result",
+			"style": {
+				"navigationBarTitleText": "签文",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/caiyun/caiyun",
+			"style": {
+				"navigationBarTitleText": "财运每日签",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/history/history",
+			"style": {
+				"navigationBarTitleText": "历史记录",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "一签·心愿",
+		"navigationBarBackgroundColor": "#FDF6EC",
+		"backgroundColor": "#FDF6EC"
+	},
+	"uniIdRouter": {}
+}
