@@ -1,0 +1,30 @@
+{
+  "version": "1",
+  "prompt": "template",
+  "title": "服务协议和隐私政策",
+  "message": "　请你务必审慎阅读、充分理解“服务协议”和“隐私政策”各条款，包括但不限于：为了向你提供更好的服务，我们需要收集你的设备信息（例如设备型号、系统版本、网络状态等）用于保障服务正常运行与安全。\n你可阅读<a href=\"https://example.com/protocol.html\">《服务协议》</a>和<a href=\"https://shui9527.github.io/onelots/privacy.html\">《隐私政策》</a>了解详细信息。如果你同意，请点击下面按钮开始接受我们的服务。",
+  "buttonAccept": "同意并继续",
+  "buttonRefuse": "暂不同意",
+  "second": {
+    "title": "确认提示",
+    "message": "　进入应用前，你需先阅读<a href=\"https://example.com/protocol.html\">《服务协议》</a>和<a href=\"https://shui9527.github.io/onelots/privacy.html\">《隐私政策》</a>，如你同意，请点击“同意并继续”",
+    "buttonAccept": "同意并继续",
+    "buttonRefuse": "暂不同意"
+  },
+  "styles": {
+    "backgroundColor": "#F6F4EF",
+    "borderRadius": "12rpx",
+    "title": {
+      "color": "#564f48"
+    },
+    "message": {
+      "color": "#564f48"
+    },
+    "buttonAccept": {
+      "color": "#a64036"
+    },
+    "buttonRefuse": {
+      "color": "#ada395"
+    }
+  }
+}
