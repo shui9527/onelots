@@ -1047,7 +1047,7 @@ function branchCollectedText(kind: 'cy' | 'lx' | 'ly' | 'mh'): string {
   min-height: 100vh;
   background: #edeae3;
   box-sizing: border-box;
-  font-family: 'MiSans', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  font-family: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   color: #ada395;
 }
 
@@ -1067,7 +1067,7 @@ function branchCollectedText(kind: 'cy' | 'lx' | 'ly' | 'mh'): string {
   font-size: 34rpx;
   font-weight: 700;
   letter-spacing: 4rpx;
-  font-family: 'MiSans', serif;
+  font-family: system-ui, -apple-system, 'PingFang SC', sans-serif;
 }
 .brand-line .b-red {
   color: #a64036;
@@ -1816,7 +1816,6 @@ function branchCollectedText(kind: 'cy' | 'lx' | 'ly' | 'mh'): string {
   color: #564f48;
   letter-spacing: 8rpx;
   line-height: 2;
-  font-family: 'MiSans';
 }
 .poem-line {
   display: block;
@@ -2033,12 +2032,5 @@ function branchCollectedText(kind: 'cy' | 'lx' | 'ly' | 'mh'): string {
   font-size: 18rpx;
   color: #bcb4a8;
   letter-spacing: 2rpx;
-}
-</style>
-
-<style>
-@font-face {
-  font-family: 'MiSans';
-  src: url('/static/fonts/MiSans-Regular.ttf');
 }
 </style>
