@@ -1,13 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 54c62d5cdcd5d3fe59baab2c772ed294_5a70463cccfa11f1898e525400248c00
-    ReservedCode1: JROLbkefa/Gjjx1ljXM+c6DAwgH1s7toXud1wmmr+1XuvVDHBwMjCoSssl+ZzUZyOQz9vlJAuxBj0+ULtAcJ47RItlvEjX7EXoPESzP2sRJica9EndmIf9X4vxI3aYYxVVth+zw9qgGH2CZPijN0r644hvjmDuTs/C3sfN5xu5Ay7WssuB2/A3kGF1M=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 54c62d5cdcd5d3fe59baab2c772ed294_5a70463cccfa11f1898e525400248c00
-    ReservedCode2: JROLbkefa/Gjjx1ljXM+c6DAwgH1s7toXud1wmmr+1XuvVDHBwMjCoSssl+ZzUZyOQz9vlJAuxBj0+ULtAcJ47RItlvEjX7EXoPESzP2sRJica9EndmIf9X4vxI3aYYxVVth+zw9qgGH2CZPijN0r644hvjmDuTs/C3sfN5xu5Ay7WssuB2/A3kGF1M=
----
 
 # 一签·心愿
 
